@@ -2,7 +2,7 @@ class Ground
 {
   constructor(x, y, w, h) 
   {
-    let options = {
+    var options = {
       isStatic:true
     };
     
@@ -12,8 +12,9 @@ class Ground
     World.add(world, this.body);
   }
 
-  show() {
-    var pos = this.body.position;
+  display()
+   {
+    var groundPos = this.body.position;
     push();
     rectMode(CENTER);
     stroke(255);
@@ -23,5 +24,3 @@ class Ground
   }
   
 }
-
-
